@@ -4,9 +4,9 @@
 function support(){
     add_theme_support('title-tag');
     add_theme_support( 'custom-logo');
-add_theme_support('title-tag');
-add_theme_support( 'post-thumbnails' );
-add_theme_support( 'automatic-feed-links' );
+    add_theme_support('title-tag');
+    add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'automatic-feed-links' );
 }
 
 add_action('after_setup_theme', 'support');
@@ -23,6 +23,7 @@ add_action('after_setup_theme', 'support');
     wp_enqueue_script('bootsrap1', "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js", array(), '5.2.0', true);
     wp_enqueue_script('bootsrap2', "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js", array(), '2.11.5', true);
     wp_enqueue_script('bootsrap3', "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js", array(), '5.2.0', true);
+    wp_enqueue_script('hamburger', get_template_directory_uri() . '/inc/js/header.js', array(), '1.1.0', true);
 
     }
     add_action( 'wp_enqueue_scripts', 'scripts');

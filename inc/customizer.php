@@ -59,6 +59,15 @@ $wp_customize->add_control( 'Footer_text',
     ) 
 );
 
+$wp_customize->add_settings( 
+    'header_logo',
+    array(
+        'default'           => get_bloginfo('template_directory').'/assets/images/site icon.png',
+        'sanitize_callback' => 'sanitize_text_field',
+        'transport'         => 'refresh',
+    )
+ );
+
 $wp_customize->add_setting( 'footer_image_logo',
     array(
         'default'           => get_bloginfo('template_directory').'/assets/images/Temp2_Footer_Logo.png',
