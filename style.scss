@@ -351,6 +351,8 @@ section#description {
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    padding-bottom: 4rem;
     
     & .description_container {
         max-width: 80%;
@@ -495,8 +497,6 @@ footer {
     width: 100%;
 
     color: white;
-
-    margin-top: 4rem;
 
     .footer-col {
         display: flex;
@@ -726,5 +726,93 @@ footer {
 
     @media #{ $media_mobile } {
         padding: 0;
+    }
+}
+
+// Single Page
+.single-page {
+    background-color: $blue;
+    padding: 5rem 0;
+
+    & a {
+        text-decoration: none;
+        color: $blue;
+    }    
+
+    // Content container
+    & article {
+        background-color: white;
+        width: 80%;
+        margin: auto;
+        padding: 2rem;
+        border-radius: 12px;
+
+        & img {
+            width: 100%;
+        }
+
+        @media #{ $media_tablet } {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 0;
+        }
+    }
+
+    // Comments
+    & .comments h2, & .lreply {  
+        color: $blue;
+        font-size: 1.5rem;
+    }
+
+    & .comment-form-comment {
+        display: flex;
+        flex-direction: column;
+
+        & > textarea {
+            margin-top: 1rem;
+            padding: 1rem;
+            resize: none;
+        }
+
+    }
+
+    & .content .form-submit > .submit {
+        background-color: $blue;
+        border: 2px solid transparent;
+        padding: 1rem 1rem;
+        color: white;
+        font-weight: 700;
+
+        &:hover {
+            background-color: white;
+            border-color: $blue;
+            color: $blue;
+        }
+    }
+
+    // Comments per User
+    & .comments-inner {
+        
+        // User comment container
+        & .byuser {
+            // display: flex;
+            width: 100%;
+
+            & > .comment-author {
+                // display: flex;
+                width: 100%;
+            }
+
+            & + .byuser {
+                border-top: 2px solid $blue;
+                margin-top: 1rem;
+                padding-top: 1rem;
+            }
+        }
+
+        & img {
+            max-height: 4rem;
+            max-width: 4rem;
+        }
     }
 }

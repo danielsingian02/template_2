@@ -331,6 +331,7 @@ section#description {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding-bottom: 4rem;
 }
 section#description .description_container {
   max-width: 80%;
@@ -466,7 +467,6 @@ footer {
   flex-direction: row;
   width: 100%;
   color: white;
-  margin-top: 4rem;
 }
 footer .footer-col {
   display: flex;
@@ -668,4 +668,70 @@ footer .article-image_map {
   .container {
     padding: 0;
   }
+}
+
+.single-page {
+  background-color: #004BAC;
+  padding: 5rem 0;
+}
+.single-page a {
+  text-decoration: none;
+  color: #004BAC;
+}
+.single-page article {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 12px;
+}
+.single-page article img {
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .single-page article {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0;
+  }
+}
+.single-page .comments h2, .single-page .lreply {
+  color: #004BAC;
+  font-size: 1.5rem;
+}
+.single-page .comment-form-comment {
+  display: flex;
+  flex-direction: column;
+}
+.single-page .comment-form-comment > textarea {
+  margin-top: 1rem;
+  padding: 1rem;
+  resize: none;
+}
+.single-page .content .form-submit > .submit {
+  background-color: #004BAC;
+  border: 2px solid transparent;
+  padding: 1rem 1rem;
+  color: white;
+  font-weight: 700;
+}
+.single-page .content .form-submit > .submit:hover {
+  background-color: white;
+  border-color: #004BAC;
+  color: #004BAC;
+}
+.single-page .comments-inner .byuser {
+  width: 100%;
+}
+.single-page .comments-inner .byuser > .comment-author {
+  width: 100%;
+}
+.single-page .comments-inner .byuser + .byuser {
+  border-top: 2px solid #004BAC;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.single-page .comments-inner img {
+  max-height: 4rem;
+  max-width: 4rem;
 }/*# sourceMappingURL=style.css.map */
