@@ -51,7 +51,7 @@ get_header();
 
 		<div class="container thirdSection_container">
 			<div class="rows thirdSection_rows">
-				<div class="col-12 thirdSection_column text-center">
+				<div class="thirdSection_column text-center">
 					<div class="thirdSection_news_image">
 
 						<img class="article-image_third" src="<?php echo get_theme_mod( 'Left_Image', get_bloginfo( 'template_directory' ) . '/assets/images/Temp2_thirdimage.png' ); ?>" border="0" alt="map">
@@ -71,8 +71,9 @@ get_header();
 	
 						<h1 class="third_heading"><?php printf( get_theme_mod( 'second_heading', __( 'Minutes', 'second_heading' ) ) ); ?></h1>
 						<a class ="news_link" href="<?php echo get_theme_mod( 'Text_link_4', __( '#', 'Text_link_4' ) ); ?>" ><p class="third_news"><?php printf( get_theme_mod( 'text_4', __( 'July 21 Meeting Minute', 'text_4' ) ) ); ?></p></a>
-						<a class ="news_link" href="<?php echo get_theme_mod( 'Text_link_5', __( '#', 'Text_link_5' ) ); ?>" ><p class="third_news"><?php printf( get_theme_mod( 'text_5', __( 'July 21 Meeting Minute', 'text_5' ) ) ); ?></p></a>
-						<a class ="news_link" href="<?php echo get_theme_mod( 'Text_link_6', __( '#', 'Text_link_6' ) ); ?>" ><p class="third_news"><?php printf( get_theme_mod( 'text_6', __( 'July 21 Meeting Minute', 'text_6' ) ) ); ?></p></a>
+						<a class ="news_link" href="<?php echo get_theme_mod( 'Text_link_5', __( '#', 'Text_link_5' ) ); ?>" ><p class="third_news"><?php printf( get_theme_mod( 'text_5', __( 'June 21 Meeting Minute', 'text_5' ) ) ); ?></p></a>
+						<a class ="news_link" href="<?php echo get_theme_mod( 'Text_link_6', __( '#', 'Text_link_6' ) ); ?>" ><p class="third_news"><?php printf( get_theme_mod( 'text_6', __( 'May 21 Meeting Minute', 'text_6' ) ) ); ?></p></a>
+						<a class ="news_link" href="<?php echo get_theme_mod( 'Text_link_6', __( '#', 'Text_link_6' ) ); ?>" ><p class="third_news"><?php printf( get_theme_mod( 'text_7', __( 'April 21 Meeting Minute', 'text_7' ) ) ); ?></p></a>
 					
 						<div class="banner-col3">
 					

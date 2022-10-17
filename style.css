@@ -88,6 +88,12 @@ body {
     justify-content: right;
   }
 }
+@media only screen and (max-width: 767px) {
+  .hamburger-btn-container {
+    padding: 0rem;
+    align-items: center;
+  }
+}
 
 .navigation {
   width: 100%;
@@ -272,6 +278,11 @@ section#banner .banner-col form > input {
   margin-bottom: 1rem;
   width: 20rem;
 }
+@media only screen and (max-width: 375px) {
+  section#banner .banner-col form > input {
+    width: 100%;
+  }
+}
 section#banner .banner-col .action-btns {
   display: flex;
   flex-direction: row;
@@ -398,6 +409,14 @@ section#description .thirdSection_container {
 }
 section#description .thirdSection_news_image {
   flex-basis: 60%;
+}
+section#description .thirdSection_news_image .article-image_third {
+  width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  section#description .thirdSection_news_image {
+    flex-basis: 100%;
+  }
 }
 section#description .thirdSection_news_minutes {
   flex-basis: 40%;

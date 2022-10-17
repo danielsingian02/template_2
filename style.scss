@@ -103,6 +103,11 @@ body {
         flex-direction: row;
         justify-content: right;
     }
+
+    @media #{ $media_tablet } {
+        padding: 0rem;
+        align-items: center;
+    }
 }
 
 .navigation {
@@ -246,7 +251,6 @@ section#banner {
         display: flex;
         width: 100% !important;
         flex-basis: 50%;
-
         
         &--center {
             justify-content: center;
@@ -290,6 +294,10 @@ section#banner {
             border: 1px solid black;
             margin-bottom: 1rem;
             width: 20rem;
+
+            @media #{ $media_mobile_sm } {
+                width: 100%;
+            }
         }
 
         & .action-btns {
@@ -425,7 +433,15 @@ section#description {
 
     & .thirdSection_news_image {
         flex-basis: 60%;
-        
+
+        & .article-image_third {
+            width: 100%;
+            
+        }
+
+        @media #{ $media_desktop } {
+            flex-basis: 100%;
+        }
     }
 
     & .thirdSection_news_minutes {
