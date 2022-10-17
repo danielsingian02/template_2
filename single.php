@@ -8,7 +8,7 @@ get_header();
 
 		the_post();
 		?>
-
+  
 		<article <?php post_class(); ?> >
 		
 			<?php the_post_thumbnail( 'my-custom-image-size' ); ?>
